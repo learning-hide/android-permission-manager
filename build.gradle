@@ -13,7 +13,7 @@ buildscript {
 allprojects {
     repositories {
         mavenCentral() // Replace jcenter()
-        google()       // For Android support libraries
+        maven { url "https://maven.google.com" }  // 👈 For Android support libraries
     }
 }
 
