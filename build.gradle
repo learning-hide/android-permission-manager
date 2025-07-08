@@ -1,18 +1,19 @@
 buildscript {
     repositories {
-        jcenter()
+        mavenCentral() // Replace jcenter() with this
+        google()       // Required for Android Gradle Plugin
     }
-
     dependencies {
         classpath 'com.android.tools.build:gradle:1.5.0'
-        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.3'
-        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.2'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5' // Updated to 1.5
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.8.5' // Updated to last version
     }
 }
 
 allprojects {
     repositories {
-        jcenter()
+        mavenCentral() // Replace jcenter()
+        google()       // For Android support libraries
     }
 }
 
