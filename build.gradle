@@ -1,7 +1,7 @@
 buildscript {
     repositories {
         mavenCentral() // Replace jcenter() with this
-        google()       // Required for Android Gradle Plugin
+        maven { url "https://maven.google.com" }  // 👈 Old Google Maven repo (no google() method)
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:1.5.0'
